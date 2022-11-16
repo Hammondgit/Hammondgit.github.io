@@ -1,5 +1,54 @@
 body{
-    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
-   /* background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%,  rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% );*/
-   
+  background-color: #1d1d1d;
+}
+
+a{
+  text-decoration:none;
+}
+
+.header{
+  display: flex;
+  position: fixed;
+  left: 0; 
+  top: 0; 
+  bottom: 0;
+  width: 15em;
+  background: #181818;
+  flex-direction: column;
+}
+
+.logo{
+  text-transform: lowercase;
+  font: 300 2em sans;
+  text-align: center;
+  padding: 0; margin: 0;
+}
+
+nav{
+  margin-top: 200px
+}
+
+ul{
+border-top: solid 1px;
+color: rgb(141, 135, 135);
+padding: 0; 
+margin: 0;
+}
+
+li{
+border-bottom: solid 1px;
+font-size: 40px;
+color: rgb(141, 135, 135);
+text-decoration: none;
+text-align: center;
+list-style: none; 
+padding: 20px;
+margin: 0;
+margin-top: 30px
+}
+
+
+
+video{
+  height: 200px;
 }
