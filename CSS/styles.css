@@ -1,0 +1,210 @@
+
+
+body {
+background:
+radial-gradient(circle farthest-side at 0% 50%, #1d1d1d 23.5%,rgba(240,166,17,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,#0f0e0e 24%,rgba(240,166,17,0) 0)19px 30px,
+linear-gradient(#1d1d1d 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#1d1d1d 0)0 0,
+linear-gradient(150deg,#1d1d1d 24%,#0f0e0e 0,#0f0e0e 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#0f0e0e 0,#0f0e0e 76%,#1d1d1d 0)0 0,
+linear-gradient(30deg,#1d1d1d 24%,#0f0e0e 0,#0f0e0e 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#0f0e0e 0,#0f0e0e 76%,#1d1d1d 0)0 0,
+linear-gradient(90deg,#0f0e0e 2%,#1d1d1d 0,#1d1d1d 98%,#0f0e0e 0%)0 0 #1d1d1d;
+background-size:40px 60px;
+}
+
+
+a{
+  text-decoration:none;
+}
+
+.header{
+  display: flex;
+  position: fixed;
+  left: 0; 
+  top: 0; 
+  bottom: 0;
+  width: 15em;
+  background: #181818;
+  flex-direction: column;
+  border-right: 0.1px solid #353434;
+}
+
+.logo{
+  text-align: center;
+  padding: 0; 
+  margin: 0;
+}
+
+
+.DText{
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 8em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px #181818,
+  1px 22px 10px #181818,
+  1px 25px 35px #181818,
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.Logotext{
+  color: #fff;
+}
+
+.Logotext2{
+  color: rgb(169, 160, 160);
+  font-size: 12px;
+}
+
+nav{
+  margin-top: 50px
+}
+
+ul{
+border-top: solid 1px;
+color: rgb(141, 135, 135);
+padding: 0; 
+margin: 0;
+}
+
+li{
+border-bottom: solid 1px;
+font-size: 40px;
+color: rgb(141, 135, 135);
+text-decoration: none;
+text-align: center;
+list-style: none; 
+padding: 20px;
+margin: 0;
+margin-top: 30px
+}
+
+
+.videoContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  padding-right: 200px;
+}
+
+.Myself{ 
+  padding-top: 70px;
+  grid-area: 1 / 4 / 3 / 2; 
+ color: rgb(71, 0, 0);
+}
+
+.customText{
+color: #fff;
+margin: 0;
+font-weight: 400;
+font-size: 0;
+line-height: 3.7rem;
+}
+
+.TextAnim{
+  font-size: 3rem;
+  transition-duration:1.5s;
+  transition-timing-function: cubic-bezier(0.64, 2.57, 0.67, 0.73); 
+}
+
+.TextAnim:hover{
+  font-size: 5rem;
+  transition-duration:0.7s;
+   color: aqua;
+}
+
+video{
+  border: 0.1px solid #696565;
+}
+
+.DonutVideo{
+  margin-top: 120px;
+  grid-area: 2 / 2 / 4 / 3; 
+  padding: 15px;
+}
+
+.TextContainer{
+  height: 250px;
+  width: 800px;
+  margin-top: -100px;
+  grid-area: 3 / 2 / 4 / 3; 
+  padding: 15px;
+}
+
+
+
+.DonutVideo:hover{
+  background-color: #696565;
+}
+
+.TripVideo{
+  margin-top: 120px;
+  grid-area: 2 / 3 / 4 / 4;
+  padding: 15px;
+}
+
+.TripVideo:hover{
+  background-color: #696565;
+}
+
+.AlbumVideo{
+  margin-top: 120px;
+  grid-area: 2 / 4 / 4 / 5;
+  padding: 15px;
+}
+
+.AlbumVideo:hover{
+  background-color: #696565;
+}
+
+.ContactText{
+  color: #f5f5f5;
+  font-family: verdana;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.LogosContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  border-top: none;
+  border-bottom: none;
+}
+.linkedin{
+scale: 0.1;
+width: 16px;
+height: 9px;
+padding-bottom: 0px;
+padding-top: 0px;
+margin-bottom: 0px;
+border-top: none;
+border-bottom: none;
+}
+
+.git{
+scale: 0.8;
+width: 16px;
+height: 9px;
+padding-right: 267px;
+padding-bottom: 0px;
+padding-top: 0px;
+margin-bottom: 0px;
+border-top: none;
+border-bottom: none;
+}
