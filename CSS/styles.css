@@ -16,6 +16,8 @@ a{
   text-decoration:none;
 }
 
+
+
 .header{
   display: flex;
   position: fixed;
@@ -89,6 +91,13 @@ margin: 0;
 margin-top: 30px
 }
 
+.videoLink{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+
 
 .videoContainer{
   display: grid;
@@ -135,19 +144,35 @@ video{
   padding: 15px;
 }
 
-.TextContainer{
-  height: 250px;
-  width: 800px;
-  margin-top: -100px;
-  grid-area: 3 / 2 / 4 / 3; 
-  padding: 15px;
+.VideoContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2b2c2c;
+}
+
+.VideoContent:hover  {
+  opacity: 0.8;
+}
+
+.VideoContentText{
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
-
-.DonutVideo:hover{
-  background-color: #696565;
-}
 
 .TripVideo{
   margin-top: 120px;
@@ -155,9 +180,6 @@ video{
   padding: 15px;
 }
 
-.TripVideo:hover{
-  background-color: #696565;
-}
 
 .AlbumVideo{
   margin-top: 120px;
@@ -165,15 +187,20 @@ video{
   padding: 15px;
 }
 
-.AlbumVideo:hover{
-  background-color: #696565;
-}
 
 .ContactText{
   color: #f5f5f5;
   font-family: verdana;
   font-weight: 700;
   font-size: 23px;
+}
+
+.TextContainer{
+  height: 250px;
+  width: 800px;
+  margin-top: -100px;
+  grid-area: 3 / 2 / 4 / 3; 
+  padding: 15px;
 }
 
 .LogosContainer{
@@ -186,6 +213,7 @@ video{
   border-top: none;
   border-bottom: none;
 }
+
 .linkedin{
 scale: 0.1;
 width: 16px;
