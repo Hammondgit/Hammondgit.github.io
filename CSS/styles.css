@@ -111,7 +111,7 @@ margin-top: 30px
 .Myself{ 
   padding-top: 70px;
   grid-area: 1 / 4 / 3 / 2; 
- color: rgb(71, 0, 0);
+  color: rgb(71, 0, 0);
 }
 
 .customText{
@@ -144,6 +144,19 @@ video{
   padding: 15px;
 }
 
+.TripVideo{
+  margin-top: 120px;
+  grid-area: 2 / 3 / 4 / 4;
+  padding: 15px;
+}
+
+
+.AlbumVideo{
+  margin-top: 120px;
+  grid-area: 2 / 4 / 4 / 5;
+  padding: 15px;
+}
+
 .VideoContent {
   position: absolute;
   top: 0;
@@ -173,21 +186,6 @@ video{
 }
 
 
-
-.TripVideo{
-  margin-top: 120px;
-  grid-area: 2 / 3 / 4 / 4;
-  padding: 15px;
-}
-
-
-.AlbumVideo{
-  margin-top: 120px;
-  grid-area: 2 / 4 / 4 / 5;
-  padding: 15px;
-}
-
-
 .ContactText{
   color: #f5f5f5;
   font-family: verdana;
@@ -212,6 +210,14 @@ video{
   align-content: normal;
   border-top: none;
   border-bottom: none;
+}
+
+.PageVideo{
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .linkedin{
