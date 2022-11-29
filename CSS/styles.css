@@ -105,7 +105,8 @@ margin-top: 30px
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
-  padding-right: 200px;
+  width: 1500px;
+  padding-left: 200px;
 }
 
 .Myself{ 
@@ -145,7 +146,7 @@ video{
 }
 
 .TripVideo{
-  margin-top: 120px;
+  margin-top: 120px; 
   grid-area: 2 / 3 / 4 / 4;
   padding: 15px;
 }
@@ -193,6 +194,22 @@ video{
   font-size: 23px;
 }
 
+.PageText{
+  color: #f5f5f5;
+  font-family: "Inconsolata", monospace;
+  padding-top: 210px;
+  font-weight: 500;
+  font-size: 23px;
+  width: 267px;
+  height: 360px;
+  padding-top: 0px;
+}
+
+.PageH{
+  color: #f5f5f5;
+  padding-top: 111px;
+}
+
 .TextContainer{
   height: 250px;
   width: 800px;
@@ -212,13 +229,35 @@ video{
   border-bottom: none;
 }
 
-.PageVideo{
-  display: block;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
+.PageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  }
+  
+  .PageItem1{ 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  .PageItem2{ 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin-top: 120px; 
+    padding: 15px; 
+    margin-left: -300px;
+    border-right: 2.5px solid #696565;
+    margin-right: 20px;
+  }
+
+  .PageItem3{ 
+    grid-area: 1 / 3 / 2 / 4; 
+  } 
+
+  .PageVideo{
+    width: 851px;
+    transform: scaleY(1.1);
+  }
 
 .linkedin{
 scale: 0.1;
@@ -241,4 +280,50 @@ padding-top: 0px;
 margin-bottom: 0px;
 border-top: none;
 border-bottom: none;
+}
+
+body {
+  background-color: #00b894;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 31px;
+  margin-top: 51px;
+  transform: rotate(180deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  animation: arrow 700ms linear infinite;
+}
+
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  right: -8px;
+  background-color: #fff;
+}
+
+.arrow::after {
+  top: -12px;
+  transform: rotate(45deg);
+}
+
+.arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
 }
