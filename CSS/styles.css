@@ -1,5 +1,3 @@
-
-
 body {
 background:
 radial-gradient(circle farthest-side at 0% 50%, #1d1d1d 23.5%,rgba(240,166,17,0) 0)21px 30px,
@@ -11,7 +9,6 @@ linear-gradient(90deg,#0f0e0e 2%,#1d1d1d 0,#1d1d1d 98%,#0f0e0e 0%)0 0 #1d1d1d;
 background-size:40px 60px;
 }
 
-
 a{
   text-decoration:none;
 }
@@ -22,7 +19,7 @@ a{
   left: 0; 
   top: 0; 
   bottom: 0;
-  width: 15em;
+  width: 13em;
   background: #181818;
   flex-direction: column;
   border-right: 0.1px solid #353434;
@@ -32,6 +29,7 @@ a{
   text-align: center;
   padding: 0; 
   margin: 0;
+  background-color: black;
 }
 
 
@@ -67,7 +65,7 @@ a{
 }
 
 nav{
-  margin-top: 50px
+  margin-top: 1px;
 }
 
 ul{
@@ -89,6 +87,13 @@ margin: 0;
 margin-top: 30px
 }
 
+.videoLink{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+
 
 .videoContainer{
   display: grid;
@@ -96,13 +101,14 @@ margin-top: 30px
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
-  padding-right: 200px;
+  width: 1500px;
+  padding-left: 200px;
 }
 
 .Myself{ 
   padding-top: 70px;
   grid-area: 1 / 4 / 3 / 2; 
- color: rgb(71, 0, 0);
+  color: rgb(71, 0, 0);
 }
 
 .customText{
@@ -135,29 +141,12 @@ video{
   padding: 15px;
 }
 
-.TextContainer{
-  height: 250px;
-  width: 800px;
-  margin-top: -100px;
-  grid-area: 3 / 2 / 4 / 3; 
-  padding: 15px;
-}
-
-
-
-.DonutVideo:hover{
-  background-color: #696565;
-}
-
 .TripVideo{
-  margin-top: 120px;
+  margin-top: 120px; 
   grid-area: 2 / 3 / 4 / 4;
   padding: 15px;
 }
 
-.TripVideo:hover{
-  background-color: #696565;
-}
 
 .AlbumVideo{
   margin-top: 120px;
@@ -165,15 +154,64 @@ video{
   padding: 15px;
 }
 
-.AlbumVideo:hover{
-  background-color: #696565;
+.VideoContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2b2c2c;
 }
+
+.VideoContent:hover  {
+  opacity: 0.8;
+}
+
+.VideoContentText{
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .ContactText{
   color: #f5f5f5;
   font-family: verdana;
   font-weight: 700;
   font-size: 23px;
+}
+
+.PageText{
+  color: #f5f5f5;
+  font-family: "Inconsolata", monospace;
+  padding-top: 210px;
+  font-weight: 500;
+  font-size: 23px;
+  width: 267px;
+  height: 360px;
+  padding-top: 0px;
+}
+
+.PageH{
+  color: #f5f5f5;
+  padding-top: 111px;
+}
+
+.TextContainer{
+  height: 250px;
+  width: 800px;
+  margin-top: -100px;
+  grid-area: 3 / 2 / 4 / 3; 
+  padding: 15px;
 }
 
 .LogosContainer{
@@ -186,6 +224,37 @@ video{
   border-top: none;
   border-bottom: none;
 }
+
+.PageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  }
+  
+  .PageItem1{ 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  .PageItem2{ 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin-top: 120px; 
+    padding: 15px; 
+    margin-left: -300px;
+    border-right: 2.5px solid #696565;
+    margin-right: 20px;
+  }
+
+  .PageItem3{ 
+    grid-area: 1 / 3 / 2 / 4; 
+  } 
+
+  .PageVideo{
+    width: 851px;
+    transform: scaleY(1.1);
+  }
+
 .linkedin{
 scale: 0.1;
 width: 16px;
@@ -207,4 +276,44 @@ padding-top: 0px;
 margin-bottom: 0px;
 border-top: none;
 border-bottom: none;
+}
+
+.icon {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 31px;
+  margin-top: 51px;
+  transform: rotate(180deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  animation: arrow 700ms linear infinite;
+}
+
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  right: -8px;
+  background-color: #fff;
+}
+
+.arrow::after {
+  top: -12px;
+  transform: rotate(45deg);
+}
+
+.arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
 }
